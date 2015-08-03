@@ -22,7 +22,10 @@ ifeq ($(ALTERNATE_IS_INTERNAL), true)
   LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res-compat $(LOCAL_RESOURCE_DIR)
 endif
 
-LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_TAGS := tests
+LOCAL_MODULE_PATH := data/app
+LOCAL_UNINSTALLABLE_MODULE := true
+LOCAL_CERTIFICATE := platform
 
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
 LOCAL_STATIC_JAVA_LIBRARIES := dashclockapi
