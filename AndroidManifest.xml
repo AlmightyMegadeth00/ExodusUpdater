@@ -43,6 +43,7 @@
 
         <activity
             android:name=".UpdatesSettings"
+            android:icon="@drawable/ic_launcher"
             android:launchMode="singleTop"
             android:hardwareAccelerated="true"
             android:label="@string/display_name"
@@ -51,6 +52,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="com.android.settings.DEFAULT" />
+                <category android:name="com.android.settings.LAUNCHER" />
             </intent-filter>
         </activity>
 
